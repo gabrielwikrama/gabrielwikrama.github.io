@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Gabriel Wikrama Pangestu - Web Developer">
+    <title>Gabriel | Web Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+     <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo2.png">
+     <!-- End Icons -->
+    
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="gradient-text">G</span>abriel.
+            </a>
+            <div class="menu-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="badge fade-up">
+                    <i class='bx bx-code-alt'></i>
+                    <span>Web Developer Portfolio</span>
+                </div>
+                <h1 class="fade-up" style="animation-delay: 0.1s;">
+                    Hi, I'm <br>
+                    <span class="gradient-text type-text">Gabriel Wikrama</span>
+                </h1>
+                <p class="fade-up" style="animation-delay: 0.2s;">
+                    Mengubah ide menjadi pengalaman digital yang interaktif dan modern. Berfokus pada pengembangan web yang estetis dan fungsional.
+                </p>
+                <div class="hero-btns fade-up" style="animation-delay: 0.3s;">
+                    <a href="#projects" class="btn btn-primary">
+                        View Projects <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image fade-in" style="animation-delay: 0.4s;">
+                <div class="image-wrapper glass-panel">
+                    <img src="img/gabriel3.jpg" alt="Gabriel Wikrama Pangestu">
+                    <div class="floating-badge badge-1">
+                        <i class='bx bxl-html5'></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class='bx bxl-css3'></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class='bx bxl-php'></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-header fade-up">
+                <h2 class="gradient-text">About Me</h2>
+                <p>Mengenal lebih dekat siapa saya dan perjalanan karir saya.</p>
+            </div>
+            <div class="about-container glass-panel fade-up">
+                <div class="about-text">
+                    <h3>Halo teman-teman, perkenalkan aku <strong>Gabriel</strong>! 👋</h3>
+                    <p>
+                        Aku adalah mahasiswa di Universitas PGRI Kanjuruhan Malang, sebelumnya lulusan SMK Bhakti Mulia Pare jurusan Rekayasa Perangkat Lunak.
+                    </p>
+                    <p>
+                        Selama di SMK, aku sudah belajar dasar PHP, Java, dan mengelola database MySQL. Aku tertarik mendalami dunia teknologi karena bidang ini penuh tantangan dan peluang. Dengan semangat belajar yang konsisten, aku percaya kita bisa terus berkembang bersama.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class='bx bx-map'></i>
+                            <span>Malang, Indonesia</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class='bx bx-laptop'></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="stat-item">
+                            <i class='bx bx-server'></i>
+                            <span>Backend Basics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header fade-up">
+                <h2 class="gradient-text">My Skills</h2>
+                <p>Teknologi yang saya gunakan untuk membangun aplikasi modern.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card glass-panel fade-up">
+                    <i class='bx bxl-html5' style="color: #e34c26;"></i>
+                    <h3>HTML5</h3>
+                    <p>Semantic & Accessible Structure</p>
+                </div>
+                <div class="skill-card glass-panel fade-up" style="animation-delay: 0.1s;">
+                    <i class='bx bxl-css3' style="color: #264de4;"></i>
+                    <h3>CSS3</h3>
+                    <p>Modern Layouts & Animations</p>
+                </div>
+                <div class="skill-card glass-panel fade-up" style="animation-delay: 0.2s;">
+                    <i class='bx bxl-javascript' style="color: #f7df1e;"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive Logic & DOM</p>
+                </div>
+                <div class="skill-card glass-panel fade-up" style="animation-delay: 0.3s;">
+                    <i class='bx bxl-php' style="color: #8993be;"></i>
+                    <h3>PHP</h3>
+                    <p>Server-side Processing</p>
+                </div>
+                <div class="skill-card glass-panel fade-up" style="animation-delay: 0.4s;">
+                    <i class='bx bxs-data' style="color: #00758f;"></i>
+                    <h3>MySQL</h3>
+                    <p>Database Management</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header fade-up">
+                <h2 class="gradient-text">Featured Projects</h2>
+                <p>Beberapa karya yang telah saya buat.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card glass-panel fade-up">
+                    <div class="project-img">
+                        <img src="img/projects/artikel.png" alt="Artikel Web">
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Artikel Web</h3>
+                        <p>Eksplorasi desain web fundamental menggunakan HTML dan CSS murni.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card glass-panel fade-up" style="animation-delay: 0.1s;">
+                    <div class="project-img">
+                        <img src="img/projects/musik.png" alt="Clouds Music">
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Clouds Music</h3>
+                        <p>Platform web musik Clouds. Proyek kolaborasi kenaikan kelas bersama rekan tim.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card glass-panel fade-up" style="animation-delay: 0.2s;">
+                    <div class="project-img">
+                        <img src="img/projects/asbam.png" alt="Asbam App">
+                        <div class="project-links">
+                            <a href="#" class="icon-link"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Asbam App</h3>
+                        <p>Sistem informasi absensi digital untuk efisiensi kehadiran guru dan murid.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-header fade-up">
+                <h2 class="gradient-text">Let's Connect</h2>
+                <p>Punya ide proyek atau sekedar ingin menyapa?</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info glass-panel fade-up">
+                    <h3>Get in Touch</h3>
+                    <p>Jangan ragu untuk menghubungi saya melalui form atau media sosial. Saya selalu terbuka untuk diskusi teknologi, kolaborasi, atau peluang lainnya.</p>
+                    <div class="contact-methods">
+                        <div class="method">
+                            <i class='bx bx-envelope'></i>
+                            <div>
+                                <h4>Email</h4>
+                                <span>gabrielwikrama@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="method">
+                            <i class='bx bx-map'></i>
+                            <div>
+                                <h4>Location</h4>
+                                <span>Malang, Jawa Timur</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form glass-panel fade-up" style="animation-delay: 0.2s; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 4rem 2rem;">
+                    <div style="width: 80px; height: 80px; border-radius: 50%; background: rgba(37, 211, 102, 0.1); display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                        <i class='bx bxl-whatsapp' style="font-size: 3rem; color: #25D366;"></i>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Chat via WhatsApp</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Lebih suka komunikasi yang cepat? Klik tombol di bawah ini untuk langsung terhubung dengan saya melalui WhatsApp.</p>
+                    <a href="https://wa.me/6285745402964" target="_blank" class="btn" style="background: linear-gradient(135deg, #25D366, #128C7E); color: white; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); border-radius: 999px; padding: 1rem 2.5rem;">
+                        Chat Sekarang <i class='bx bx-message-rounded-dots' style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="gradient-text">Gabriel.</span>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/gabrielwikrama/" target="_blank" class="glass-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-wikrama-7447562a0/" target="_blank" class="glass-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/gabrielwikrama" target="_blank" class="glass-icon"><i class='bx bxl-github'></i></a>
+            </div>
+            <p class="copyright">© 2024 Gabriel Wikrama Pangestu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
