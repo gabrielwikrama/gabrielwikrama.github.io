@@ -1,0 +1,98 @@
+.tugas-container {
+    max-width: 900px;
+    margin: 8rem auto 4rem;
+    padding: 2rem;
+}
+.content-card {
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 24px;
+    backdrop-filter: blur(16px);
+    box-shadow: var(--glass-shadow);
+}
+.content-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.content-card h2 i {
+    color: var(--primary-color);
+}
+.content-card p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.code-header {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid var(--glass-border);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: monospace;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+.code-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.dot-red { background: #ff5f56; }
+.dot-yellow { background: #ffbd2e; }
+.dot-green { background: #27c93f; }
+pre[class*="language-"] {
+    margin: 0;
+    border-radius: 0 0 12px 12px;
+    background: rgba(10, 10, 20, 0.8) !important;
+    border: 1px solid var(--glass-border);
+    border-top: none;
+    padding: 1.5rem !important;
+}
+.flowchart-container {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    overflow-x: auto;
+}
+.output-box {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--glass-border);
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-family: monospace;
+    color: var(--text-primary);
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+.output-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .tugas-container {
+        padding: 1rem;
+        margin-top: 6rem;
+    }
+    .content-card {
+        padding: 1.5rem;
+    }
+}
+

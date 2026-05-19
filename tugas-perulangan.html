@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Struktur Perulangan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PrismJS Theme for Code -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <!-- CSS Khusus Tugas Algoritma -->
+    <link rel="stylesheet" href="tugas-algoritma.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i class='bx bx-left-arrow-alt' style="font-size: 1.5rem;"></i>
+                <span class="gradient-text">Kembali</span>
+            </a>
+            <div class="nav-links" style="display: flex;">
+                <span class="badge" style="margin-bottom: 0;">Struktur Kontrol</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="tugas-container">
+        <div class="section-header fade-up" style="margin-bottom: 3rem; text-align: left;">
+            <h1 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Struktur Perulangan</h1>
+            <p style="font-size: 1.1rem; max-width: 100%;">Tugas Implementasi Perulangan (Looping) - For, While, Do-While, dan Nested Loop</p>
+        </div>
+
+        <!-- Deskripsi Kasus -->
+        <div class="content-card fade-up">
+            <h2><i class='bx bx-book-content'></i> 1. Deskripsi Program</h2>
+            <p>
+                Program ini mendemonstrasikan empat jenis struktur perulangan yang umum digunakan dalam bahasa pemrograman, khususnya menggunakan <strong>JavaScript</strong>:
+            </p>
+            <ul style="margin-top: 1rem;">
+                <li style="color: var(--text-secondary); margin-bottom: 0.8rem; margin-left: 1.5rem; list-style-type: disc;"><strong>For Loop:</strong> Digunakan untuk perulangan yang jumlah iterasinya sudah diketahui secara pasti dari awal.</li>
+                <li style="color: var(--text-secondary); margin-bottom: 0.8rem; margin-left: 1.5rem; list-style-type: disc;"><strong>While Loop:</strong> Digunakan ketika kondisi perulangan dievaluasi di awal sebelum blok kode dijalankan.</li>
+                <li style="color: var(--text-secondary); margin-bottom: 0.8rem; margin-left: 1.5rem; list-style-type: disc;"><strong>Do-While Loop:</strong> Mirip dengan While, tetapi menjamin bahwa blok kode akan dieksekusi minimal satu kali, karena evaluasi kondisi dilakukan di akhir.</li>
+                <li style="color: var(--text-secondary); margin-bottom: 0.8rem; margin-left: 1.5rem; list-style-type: disc;"><strong>Nested Loop (Perulangan Bersarang):</strong> Perulangan di dalam perulangan lain, sering digunakan untuk membuat pola matriks atau baris-kolom yang kompleks.</li>
+            </ul>
+        </div>
+
+        <!-- Javascript Implementation -->
+        <div class="content-card fade-up" style="animation-delay: 0.1s;">
+            <h2><i class='bx bxl-javascript'></i> 2. Implementasi Program JavaScript</h2>
+            <p>Berikut adalah kode program yang menerapkan keempat struktur perulangan tersebut secara berurutan.</p>
+            
+            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin-top: 2rem;">
+                <div class="code-header">
+                    <span class="code-dot dot-red"></span>
+                    <span class="code-dot dot-yellow"></span>
+                    <span class="code-dot dot-green"></span>
+                    <span style="margin-left: 10px;">perulangan.js</span>
+                </div>
+                <pre><code class="language-javascript">console.log("=== 1. IMPLEMENTASI FOR LOOP ===");
+// Menampilkan urutan angka dari 1 sampai 5
+for (let i = 1; i <= 5; i++) {
+    console.log(`Perulangan For ke-${i}`);
+}
+
+console.log("\n=== 2. IMPLEMENTASI WHILE LOOP ===");
+// Menghitung mundur dari 3 sampai 1
+let hitungMundur = 3;
+while (hitungMundur > 0) {
+    console.log(`Menghitung mundur: ${hitungMundur}`);
+    hitungMundur--;
+}
+
+console.log("\n=== 3. IMPLEMENTASI DO-WHILE LOOP ===");
+// Akan dieksekusi minimal satu kali meskipun kondisi di awal sudah salah
+let x = 10;
+do {
+    console.log(`Do-While dijalankan 1 kali! Nilai x = ${x}`);
+    x++;
+} while (x < 5); // Kondisi bernilai false, loop langsung berhenti
+
+console.log("\n=== 4. IMPLEMENTASI NESTED LOOP ===");
+// Membuat pola piramida bintang siku-siku berukuran 5 tingkat
+let tingkat = 5;
+for (let baris = 1; baris <= tingkat; baris++) {
+    let polaBintang = "";
+    // Loop kolom berada di dalam loop baris
+    for (let kolom = 1; kolom <= baris; kolom++) {
+        polaBintang += "⭐ ";
+    }
+    console.log(polaBintang);
+}
+</code></pre>
+            </div>
+
+            <div class="output-box">
+                <div class="output-title"><i class='bx bx-terminal'></i> Output Console</div>
+                <div style="color: #a8b2d1; line-height: 1.8;">
+                <span style="color: #ec4899; font-weight: bold;">=== 1. IMPLEMENTASI FOR LOOP ===</span><br>
+                Perulangan For ke-1<br>
+                Perulangan For ke-2<br>
+                Perulangan For ke-3<br>
+                Perulangan For ke-4<br>
+                Perulangan For ke-5<br>
+                <br>
+                <span style="color: #ec4899; font-weight: bold;">=== 2. IMPLEMENTASI WHILE LOOP ===</span><br>
+                Menghitung mundur: 3<br>
+                Menghitung mundur: 2<br>
+                Menghitung mundur: 1<br>
+                <br>
+                <span style="color: #ec4899; font-weight: bold;">=== 3. IMPLEMENTASI DO-WHILE LOOP ===</span><br>
+                Do-While dijalankan 1 kali! Nilai x = 10<br>
+                <br>
+                <span style="color: #ec4899; font-weight: bold;">=== 4. IMPLEMENTASI NESTED LOOP ===</span><br>
+                ⭐ <br>
+                ⭐ ⭐ <br>
+                ⭐ ⭐ ⭐ <br>
+                ⭐ ⭐ ⭐ ⭐ <br>
+                ⭐ ⭐ ⭐ ⭐ ⭐ <br>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content" style="padding: 1rem 0;">
+            <p class="copyright">© 2024 Gabriel Wikrama Pangestu. Tugas Pemrograman Dasar.</p>
+        </div>
+    </footer>
+
+    <!-- PrismJS for Syntax Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

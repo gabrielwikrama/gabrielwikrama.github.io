@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Algoritma Sekuensial</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/logo2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PrismJS Theme for Code -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    
+    <!-- MermaidJS -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    
+    <!-- CSS Khusus Tugas Algoritma -->
+    <link rel="stylesheet" href="tugas-algoritma.css">
+</head>
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="home.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <i class='bx bx-left-arrow-alt' style="font-size: 1.5rem;"></i>
+                <span class="gradient-text">Kembali</span>
+            </a>
+            <div class="nav-links" style="display: flex;">
+                <span class="badge" style="margin-bottom: 0;">Algoritma Pemrograman</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="tugas-container">
+        <div class="section-header fade-up" style="margin-bottom: 3rem; text-align: left;">
+            <h1 class="gradient-text" style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Algoritma Sekuensial</h1>
+            <p style="font-size: 1.1rem; max-width: 100%;">Tugas Implementasi Algoritma Sekuensial - Menghitung Gaji Bersih Karyawan</p>
+        </div>
+
+        <!-- Deskripsi Kasus -->
+        <div class="content-card fade-up">
+            <h2><i class='bx bx-book-content'></i> 1. Deskripsi Kasus</h2>
+            <p>
+                Sebuah perusahaan ingin membuat program sederhana untuk menghitung <strong>Gaji Bersih</strong> seorang karyawan. 
+                Diketahui bahwa Gaji Bersih didapatkan dari <strong>Gaji Pokok</strong> ditambah dengan <strong>Tunjangan</strong> (20% dari Gaji Pokok), 
+                kemudian dikurangi dengan <strong>Pajak</strong> (10% dari total Gaji Pokok dan Tunjangan).
+            </p>
+            <p>
+                Buatlah algoritma sekuensial yang menerima input Gaji Pokok, lalu menghitung dan menampilkan Tunjangan, Pajak, dan hasil akhir Gaji Bersih.
+            </p>
+        </div>
+
+        <!-- Flowchart -->
+        <div class="content-card fade-up" style="animation-delay: 0.1s;">
+            <h2><i class='bx bx-git-branch'></i> 2. Flowchart</h2>
+            <p>Representasi visual dari alur program (diagram alir) yang berjalan secara berurutan dari atas ke bawah.</p>
+            <div class="flowchart-container">
+                <div class="mermaid">
+                    graph TD
+                    A([Mulai]) --> B[/"Input Gaji Pokok"/]
+                    B --> C["Tunjangan = 0.2 * Gaji Pokok"]
+                    C --> D["Pajak = 0.1 * (Gaji Pokok + Tunjangan)"]
+                    D --> E["Gaji Bersih = Gaji Pokok + Tunjangan - Pajak"]
+                    E --> F[/"Output Gaji Bersih"/]
+                    F --> G([Selesai])
+                </div>
+            </div>
+        </div>
+
+        <!-- Pseudocode -->
+        <div class="content-card fade-up" style="animation-delay: 0.2s;">
+            <h2><i class='bx bx-code-block'></i> 3. Pseudocode</h2>
+            <p>Deskripsi langkah-langkah logika program secara terstruktur sebelum diimplementasikan ke dalam kode.</p>
+            
+            <div style="background: rgba(0, 0, 0, 0.4); border-radius: 12px; border: 1px solid var(--glass-border); padding: 1.5rem; font-family: monospace; color: var(--text-primary); line-height: 1.8; font-size: 1rem; overflow-x: auto;">
+<span style="color: var(--secondary-color); font-weight: bold;">PROGRAM</span> Hitung_Gaji_Bersih<br><br>
+<span style="color: var(--secondary-color); font-weight: bold;">DEKLARASI:</span><br>
+&nbsp;&nbsp;gaji_pokok, tunjangan, pajak, gaji_bersih : <span style="color: #56b6c2;">Real</span><br><br>
+<span style="color: var(--secondary-color); font-weight: bold;">ALGORITMA:</span><br>
+&nbsp;&nbsp;<span style="color: #c678dd; font-weight: bold;">READ</span> gaji_pokok<br>
+&nbsp;&nbsp;tunjangan &larr; 0.2 * gaji_pokok<br>
+&nbsp;&nbsp;pajak &larr; 0.1 * (gaji_pokok + tunjangan)<br>
+&nbsp;&nbsp;gaji_bersih &larr; gaji_pokok + tunjangan - pajak<br>
+&nbsp;&nbsp;<span style="color: #c678dd; font-weight: bold;">PRINT</span> "Gaji Bersih: ", gaji_bersih
+            </div>
+        </div>
+
+        <!-- Python Implementation -->
+        <div class="content-card fade-up" style="animation-delay: 0.3s;">
+            <h2><i class='bx bxl-python'></i> 4. Implementasi Python</h2>
+            <p>Implementasi algoritma sekuensial di atas menggunakan bahasa pemrograman Python.</p>
+            
+            <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                <div class="code-header">
+                    <span class="code-dot dot-red"></span>
+                    <span class="code-dot dot-yellow"></span>
+                    <span class="code-dot dot-green"></span>
+                    <span style="margin-left: 10px;">hitung_gaji.py</span>
+                </div>
+                <pre><code class="language-python"># Program Menghitung Gaji Bersih Karyawan
+
+def hitung_gaji_bersih(gaji_pokok):
+    """Fungsi untuk menghitung gaji bersih secara sekuensial."""
+    
+    # 1. Menghitung Tunjangan (20% dari gaji pokok)
+    tunjangan = 0.20 * gaji_pokok
+    
+    # 2. Menghitung Pajak (10% dari total gaji pokok + tunjangan)
+    pajak = 0.10 * (gaji_pokok + tunjangan)
+    
+    # 3. Menghitung Gaji Bersih
+    gaji_bersih = gaji_pokok + tunjangan - pajak
+    
+    return tunjangan, pajak, gaji_bersih
+
+# Input (Simulasi input dari user)
+gaji_pokok_input = 5000000 
+
+# Proses
+tunjangan, pajak, gaji_bersih = hitung_gaji_bersih(gaji_pokok_input)
+
+# Output
+print("=== Rincian Gaji Karyawan ===")
+print(f"Gaji Pokok  : Rp {gaji_pokok_input:,.2f}")
+print(f"Tunjangan   : Rp {tunjangan:,.2f}")
+print(f"Pajak       : Rp {pajak:,.2f}")
+print(f"-----------------------------")
+print(f"Gaji Bersih : Rp {gaji_bersih:,.2f}")
+</code></pre>
+            </div>
+
+            <div class="output-box">
+                <div class="output-title"><i class='bx bx-terminal'></i> Output Terminal</div>
+                <div style="color: #a8b2d1;">
+                === Rincian Gaji Karyawan ===<br>
+                Gaji Pokok  : Rp 5,000,000.00<br>
+                Tunjangan   : Rp 1,000,000.00<br>
+                Pajak       : Rp 600,000.00<br>
+                -----------------------------<br>
+                <span style="color: #4ade80; font-weight: bold;">Gaji Bersih : Rp 5,400,000.00</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content" style="padding: 1rem 0;">
+            <p class="copyright">© 2024 Gabriel Wikrama Pangestu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- PrismJS for Syntax Highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Scripts Khusus Tugas Algoritma -->
+    <script src="tugas-algoritma.js"></script>
+</body>
+</html>
